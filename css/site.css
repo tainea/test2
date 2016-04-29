@@ -172,9 +172,11 @@ p.copyright {
     color: red;
 }
 
+/*
 [data-content-type]{
-    display:none;     
+    display:none;
 }
+*/
 
 .kitten.selected{
     background-color: #FFE563;   

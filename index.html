@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +26,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/myscript.js"></script>
 </head>
 
 <body>
@@ -95,6 +102,8 @@
 
     <!-- Page Content -->
 
+    <!-------------------- A B O U T --------------------------->
+
     <div id="about" class="content-section">
 
         <div class="container">
@@ -106,10 +115,28 @@
                     <h2 class="section-heading">4 kittens every week</h2>
                     <p class="lead">That's it, 4 adorable kittens fight an epic battle every week.</p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6"  data-content-type="image">
-                    <img class="img-responsive" src="img/4_Kittens.jpg" alt="">
-                </div>
-            </div>
+		<div id="carousel" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                		<div class="col-lg-5 col-lg-offset-2 col-sm-6"  data-content-type="image">
+                    		<img class="img-responsive" src="img/4_Kittens.jpg" alt="">
+                		</div>
+			<div class="col-lg-5 col-lg-offset-2 col-sm-6"  data-content-type="image">
+                    		<img class="img-responsive" src="img/4_Kittens.jpg" alt="">
+                		</div>
+			<div class="col-lg-5 col-lg-offset-2 col-sm-6"  data-content-type="image">
+                    		<img class="img-responsive" src="img/4_Kittens.jpg" alt="">
+                		</div>
+			<div class="col-lg-5 col-lg-offset-2 col-sm-6"  data-content-type="image">
+                    		<img class="img-responsive" src="img/4_Kittens.jpg" alt="">
+                		</div>
+		</div>
+<div id="a">
+  <div><h3>1</h3></div>
+  <div><h3>2</h3></div>
+  <div><h3>3</h3></div>
+  <div><h3>4</h3></div>
+  <div><h3>5</h3></div>
+  <div><h3>6</h3></div>
+</div>            </div>
 
         </div>
         <!-- /.container -->

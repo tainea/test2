@@ -1,3 +1,23 @@
+$(document).ready(function(){
+	// DOM is ready, we can initialize our own stuff
+	init();
+});
+
+function
+init()
+{
+	// enable SLICK
+	$('#carousel').slick();
+	$('#a').slick({
+		'autoplay': true,
+		'autoplaySpeed': 4000,
+		'dots': true,
+		'slidesToShow': 1,
+		'slidesToScroll': 1
+	});
+}
+
+/*
 $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
@@ -33,3 +53,4 @@ $("#enter-form").validate({
   }
 }
 });
+*/
