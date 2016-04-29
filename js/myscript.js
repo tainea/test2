@@ -53,10 +53,16 @@ initVoteList()
 {
 	var el = $("#vote div.row");
 	var data = fakeData();
-	var template = _.template('<div class="col-sm-6 col-md-3"><div class="thumbnail kitten" data-id="<%- id %>"><img alt="100%x200" src="<%- imageUrl %>"><div class="caption text-center"><h3><%- name %></h3><p><%- description %></p><p><a role="button" class="btn btn-primary">Vote</a></p><img src="img/smallajaxloader.gif" class="vote-loader hidden"></div></div></div>');
+	var template = _.template('<div class="col-sm-6 col-md-3"><div class="thumbnail kitten" data-id="<%- id %>"><img alt="100%x200" src="<%- imageUrl %>"><div class="caption text-center"><h3><%- name %></h3><p><%- description %></p><p><a role="button" class="btn btn-primary" kitten="<%- id %>">Vote</a></p><img src="img/smallajaxloader.gif" class="vote-loader hidden"></div></div></div>');
 
 	_(data).forEach(function(kitten) {
 		el.append(template(kitten));
+	});
+
+	el.find('a.btn').bind('click', {data: data}, function(event) {
+		var id = event.target.attributes.kitten.value;
+		var kitten = _.find(event.data.data, {id: id});
+		alert("Vous avez voté pour " + kitten.name + " !");
 	});
 }
 
