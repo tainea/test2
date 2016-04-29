@@ -6,7 +6,13 @@ $(document).ready(function(){
 function
 init()
 {
-	// enable SLICK
+	initCarousel();
+	initFormValidation();
+}
+
+function
+initCarousel()
+{
 	$('#carousel').slick(
 	{
 		'infinite': true,
@@ -16,8 +22,11 @@ init()
 		'slidesToShow': 1,
 		'slidesToScroll': 1
 	});
+}
 
-	// enable FORM VALIDATION
+function
+initFormValidation()
+{
 	$('#enter-form').validate(
 	{
 		rules: {
@@ -37,3 +46,5 @@ init()
     		}
 	});
 }
+
+
