@@ -69,6 +69,18 @@ fakeData()
 			name: 'Pyjama',
 			description: "He's extremely funny",
 			imageUrl: 'http://placekitten.com/g/200/300'
+		},
+		{
+			id: '2',
+			name: 'Pantalon',
+			description: "He's extremely grumpy",
+			imageUrl: 'http://placekitten.com/200/300'
+		},
+		{
+			id: '3',
+			name: 'Chemise',
+			description: "He's extremely funky",
+			imageUrl: 'http://placekitten.com/g/200/300'
 		}
 	]
 }
